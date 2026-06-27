@@ -1,0 +1,130 @@
+
+
+body{
+    background: linear-gradient(135deg,#eef8f1,#d8f3dc);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height:100vh;
+}
+
+/* navegador */
+
+.navbar{
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* tarjetas */
+
+.card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.card-header{
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+
+/* formulario */
+
+.form-label{
+    font-weight:600;
+    color:#333;
+}
+
+.form-control{
+    border-radius:10px;
+    border:2px solid #dee2e6;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#198754;
+    box-shadow:0 0 10px rgba(25,135,84,.25);
+}
+
+/* botones */
+
+.btn{
+    border-radius:10px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-success:hover{
+    transform:scale(1.03);
+}
+
+.btn-warning:hover,
+.btn-danger:hover{
+    transform:scale(1.05);
+}
+
+/* tabla */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    text-transform:uppercase;
+    font-size:.9rem;
+}
+
+.table tbody tr{
+    transition:.2s;
+}
+
+.table tbody tr:hover{
+    background:#e8f5e9;
+}
+
+/* insignia */
+.badge{
+    padding:10px 15px;
+    border-radius:10px;
+}
+
+/* alertas */
+
+.alert{
+    border-radius:10px;
+}
+
+/* pie de pagina */
+footer{
+    margin-top:30px;
+    font-weight:500;
+}
+
+/* responsive */
+
+@media (max-width:768px){
+    .card-header h3{
+        font-size:1.3rem;
+    }
+    .btn-lg{
+        width:100%;
+    }
+    .table{
+        font-size:.85rem;
+    }
+}
+
+@media (max-width:576px){
+    .navbar-brand{
+        font-size:1rem;
+    }
+    .card{
+        border-radius:12px;
+    }
+    .form-control{
+        font-size:.95rem;
+    }
+}

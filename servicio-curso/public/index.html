@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-book-half"></i>
+                Universidad Tecnológica XYZ
+            </a>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+
+        <!-- Formulario -->
+        <div class="card shadow-lg mb-4">
+
+            <div class="card-header bg-success text-white">
+                <h3 class="mb-0">
+                    <i class="bi bi-journal-plus"></i>
+                    Registro de Cursos
+                </h3>
+            </div>
+
+            <div class="card-body">
+
+                <form id="formulario">
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Código</label>
+                            <input type="text" id="codigo" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nombre del Curso</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Créditos</label>
+                            <input type="number" id="creditos" class="form-control" min="1" max="10" required>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Docente</label>
+                            <input type="text" id="docente" class="form-control" required>
+                        </div>
+
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success btn-lg">
+                            <i class="bi bi-save"></i>
+                            Registrar Curso
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Tabla -->
+        <div class="card shadow">
+
+            <div class="card-header bg-dark text-white">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6">
+                        <h4 class="mb-0">
+                            <i class="bi bi-list-ul"></i>
+                            Lista de Cursos
+                        </h4>
+                    </div>
+
+                    <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                        <span class="badge bg-success fs-6">
+                            Total: <span id="totalCursos">0</span>
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="card-body">
+
+                <div id="mensaje"></div>
+
+                <div class="mb-3">
+                    <input
+                        type="text"
+                        id="buscar"
+                        class="form-control"
+                        placeholder="Buscar curso...">
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="table table-hover table-striped align-middle">
+
+                        <thead class="table-success">
+
+                            <tr>
+                                <th>#</th>
+                                <th>Código</th>
+                                <th>Curso</th>
+                                <th>Créditos</th>
+                                <th>Docente</th>
+                                <th>Acciones</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="listaCursos">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="text-center py-3 mt-4 bg-success text-white">
+        <small>Proyecto Backend - Microservicio de Cursos</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

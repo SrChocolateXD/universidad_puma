@@ -1,0 +1,131 @@
+body{
+    background: linear-gradient(135deg,#eef2ff,#dbeafe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* navegador */
+
+.navbar{
+    background: linear-gradient(90deg,#0d6efd,#0b5ed7) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+/* Tarjeta */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card-header{
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* Formulario */
+.form-label{
+    font-weight:600;
+}
+
+.form-control{
+    border-radius:12px;
+    border:2px solid #dee2e6;
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 10px rgba(13,110,253,.3);
+}
+
+/* boton */
+
+.btn-success{
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-success:hover{
+    transform:scale(1.03);
+}
+
+/* Tabla */
+
+.table{
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table thead{
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}
+
+.table tbody tr{
+    transition:.2s;
+}
+
+.table tbody tr:hover{
+    background:#e9f2ff;
+}
+
+/* acciones de botones */
+
+.btn-warning,
+.btn-danger{
+    border-radius:8px;
+    margin-right:5px;
+}
+
+/* pie de pagina  */
+
+footer{
+    background:linear-gradient(90deg,#0d6efd,#0b5ed7);
+    font-weight:500;
+}
+
+/* responsive */
+
+@media(max-width:992px){
+    .card-header h2{
+        font-size:1.5rem;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        padding:15px;
+    }
+    .btn{
+        width:100%;
+    }
+    .card{
+        border-radius:15px;
+    }
+}
+
+@media(max-width:576px){
+    .navbar-brand{
+        font-size:1rem;
+    }
+    h2{
+        font-size:1.3rem;
+    }
+    .table{
+        font-size:.85rem;
+    }
+}

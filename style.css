@@ -1,0 +1,92 @@
+
+
+body{
+    background: linear-gradient(135deg,#0d6efd,#198754);
+    font-family: "Segoe UI",sans-serif;
+}
+
+/* tarjeta principal */
+
+.principal{
+    border:none;
+    border-radius:25px;
+    overflow:hidden;
+    width:100%;
+    max-width:1000px;
+}
+
+/* Logo */
+
+.logo{
+    font-size:5rem;
+    color:#0d6efd;
+}
+
+/* tutilos */
+
+.titulo{
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.subtitulo{
+    color:#6c757d;
+}
+
+/* modulos */
+
+.modulo{
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.modulo:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* iconos */
+
+.icono{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.estudiantes .icono{
+    color:#0d6efd;
+}
+
+.cursos .icono{
+    color:#198754;
+}
+
+/* botones */
+
+.btn{
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.03);
+}
+
+/* responsibe */
+
+@media(max-width:768px){
+    .principal{
+        margin:20px;
+    }
+    .logo{
+        font-size:4rem;
+    }
+    .titulo{
+        font-size:1.8rem;
+    }
+    .icono{
+        font-size:3rem;
+    }
+}
